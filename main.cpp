@@ -5,8 +5,7 @@ struct header {
     void *next;//8
     void *prev;//8
     size_t size;//8
-    unsigned alig=0; // выравнивание до 32
-};// mem 32 byte
+};// mem 28 byte
 
 ///global variable
 struct header *start_head; // 8 byte
@@ -31,7 +30,10 @@ void mysetup(void *buf, std::size_t size) {
 
 // Функция аллокации
 void *myalloc(std::size_t size) {
+    void *st = start_head;
+    while (st != nullptr){
 
+    }
 }
 
 // Функция освобождения
